@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extract data </title>
+    
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <!--
+      - --------------------------------------------------
+     -->
+  </head>
+  <body>
+
+    <img src="./logo/logo_128.png" id="logoImage" />
+
+    <div class="button1-container">
+    <button id="extract-btn">Start Verification</button>
+    </div>
+
+    <!-- <div id="result">
+      <span style="font-weight: bold;">Result :</span>
+      <span style="font-style: italic;color: blue;" id="res">nothing here</span>
+    </div> -->
+
+
+    <div class="email-container">
+	
+		<div>From :
+			<span class="email-sender">-</span>
+		</div>
+		<div>Subject :
+			<span class="email-subject">-</span>
+		</div>
+
+      <!--  -->
+      <details>
+      <summary>
+         <span class="showmore">Show Mail content</span> <!--<span class="icon">^</span> -->
+      </summary>
+      <div class="email-body">
+        <p>Nothing here yet..</p>
+      </div>
+    </details>
+      <!--  -->
+
+      <div class="server-result any-container">
+        <div>
+          <h2>Phishing :</h2>
+          <span id="1" class="p">unknown</span>
+        </div>
+        <div>
+          <h2>Spam :</h2>
+          <span id="2" class="s">unknown</span>
+        </div>
+        <div>
+          <h2>Malware :</h2>
+          <input name="my-file-upload" type="file" id="fileUpload"/></br>
+          <span id="3" class="m">unknown</span>
+        </div>
+      </div>
+      <!-- TODO : access elemtn from :  document.getElementsByClassName("server-result")[0].querySelector(".p") -->
+    </div>
+
+
+    <script src="popup.js"></script>
+  </body>
+</html>

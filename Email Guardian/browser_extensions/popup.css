@@ -1,0 +1,136 @@
+body {
+  text-align: center;
+  width: max-content;
+}
+
+#logoImage {
+  width: 100px;
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
+  outline: none;
+}
+
+.email-container {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.any-container {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.email-sender {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.email-subject {
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.email-body {
+  margin-bottom: 10px;
+}
+
+#extract-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #extract-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #extract-btn:active {
+    background-color: #003d80;
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+    margin-top: 10px;
+    
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  details {
+    user-select: none;
+  }
+  
+  details>summary span.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    margin-left: auto;
+  }
+  
+  details[open] summary span.icon {
+    transform: rotate(180deg);
+  }
+  
+  summary {
+    /* display: flex; */
+    cursor: pointer;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+
+  .showmore {
+    display: inline-block;
+    padding: 1px 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  }
+
+  .showmore:hover {
+    background-color: #ddd;
+    border-color: #999;
+    color: #000;
+  }
+
+  .danger_text {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .safe_text {
+    color: green;
+    font-weight: bold;
+  }
+

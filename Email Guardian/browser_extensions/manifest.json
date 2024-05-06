@@ -1,0 +1,28 @@
+{
+  "name": "My test extension",
+  "description": "test........",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["alarms", "notifications", "storage", "tabs", "activeTab","declarativeContent","nativeMessaging"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "test extension",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "logo/logo_16.png",
+    "32": "logo/logo_32.png",
+    "48": "logo/logo_48.png",
+    "128": "logo/logo_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js":["extractorEmail.js","content.js"],
+      
+      "run_at":"document_end"
+    }
+  ]
+}
